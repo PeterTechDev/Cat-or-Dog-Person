@@ -1,16 +1,19 @@
 /* reseta as configs da page para não atraplhar nosso estilo */
+
 * {
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
     font-family: 'Klee One', cursive, arial;
+    /* para não ter barra de rolagem */
+    /* overflow: hidden; */
 }
 
 
 /* Adiciona cores especificas em variáveis */
+
 html {
-    --red: #C11432;  
+    --red: #C11432;
     --blue: #009ADA;
     --green: #66A64F;
     --yellow: #FDD10A;
@@ -25,12 +28,10 @@ header {
     background-color: var(--blue);
     height: 12vh;
     padding: 10px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .logo img {
     width: 3vw;
@@ -41,7 +42,7 @@ header {
 }
 
 .logo:hover {
-    transform:scale(1.5);
+    transform: scale(1.5);
 }
 
 nav a {
@@ -58,7 +59,6 @@ nav a {
     border: solid 5px var(--green);
     border-radius: 10px;
     box-shadow: 1px 1px 2px 2px var(--blue);
-
     display: flex;
     flex-direction: column;
 }
@@ -69,13 +69,12 @@ h2 {
     text-align: center;
 }
 
-#btn-container{
+#btn-container {
     display: flex;
     justify-content: space-between;
-
 }
 
-#btn-container button{
+#btn-container button {
     background-color: var(--blue);
     /* color: #fafafa; */
     width: 45%;
@@ -92,10 +91,6 @@ h2 {
     /* opacity: 0.7; */
 }
 
-main {
-    display: flex;
-}
-
 .hide {
     display: none;
 }
@@ -105,41 +100,57 @@ button:hover {
     letter-spacing: 2px;
     transform: scale(1.1);
     transition-duration: .2s;
-    border:solid 2px var(--black);
+    border: solid 2px var(--black);
     color: var(--red);
-  }
+}
 
-  .img-container {
-      width: 25%;
-      display: flex;
-      border: solid 5px var(--blue);
-  }
-  .cat .img-container  {
-    border: solid 5px var(--red);
 
-  }
+/* MAIN  */
 
-  .img-container img {
-      width: 100%;
-  }
-/* 
-  .fas {
-    height: 150px;
-  } */
+main {
+    display: flex;
+}
 
-  .fa-cat {
-      color: var(--yellow);
-      padding-right: 10px;
-  }
+.container {
+    display: flex;
+}
 
-  .fa-dog {
-      color: var(--yellow);
-      padding-right: 10px;
-  }
+.img-container {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 3px;
+    width: 20rem;
+}
 
-  button:hover .fas {
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cat img:hover {
+    box-shadow: 0 0 5px 1px var(--red);
+}
+
+.dog img:hover {
+    box-shadow: 0 0 5px 1px var(--blue);
+}
+
+
+/* ICONES */
+
+.fa-cat {
+    color: var(--yellow);
+    padding-right: 10px;
+}
+
+.fa-dog {
+    color: var(--yellow);
+    padding-right: 10px;
+}
+
+button:hover .fas {
     transform: transform(1);
-    color:var(--red);
+    color: var(--red);
     transform: rotate(-360deg);
     /* transform: scale(1.5); */
     transition-duration: .5s;
