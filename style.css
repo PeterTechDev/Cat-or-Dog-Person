@@ -17,9 +17,13 @@ html {
     --black: #070707;
 }
 
+body {
+    background-color: #fffafa;
+}
+
 header {
     background-color: var(--blue);
-    height: 8vh;
+    height: 12vh;
     padding: 10px;
 
     display: flex;
@@ -27,7 +31,20 @@ header {
     align-items: center;
 }
 
-a {
+
+.logo img {
+    width: 3vw;
+}
+
+.logo {
+    transition: .2s;
+}
+
+.logo:hover {
+    transform:scale(1.5);
+}
+
+nav a {
     text-decoration: none;
     border: var(--green) solid 3px;
     border-radius: 10px;
