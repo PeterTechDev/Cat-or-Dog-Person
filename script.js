@@ -1,3 +1,8 @@
+const userName = prompt('Por favor insita seu nome');
+
+greeting = document.getElementById('greeting').innerHTML += ` ${userName}! 💖`
+
+
 //CAPTURA todos os elementos que tem a classe e os add em uma lista
 const dog = document.querySelectorAll('.dog');
 const cat = document.querySelectorAll('.cat');

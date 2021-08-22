@@ -1,3 +1,4 @@
+/* reseta as configs da page para não atraplhar nosso estilo */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* Adiciona cores especificas em variáveis */
 html {
     --red: #C11432;  
     --blue: #009ADA;
