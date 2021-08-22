@@ -54,12 +54,22 @@ nav a {
     background-color: var(--green);
 }
 
+nav a:hover {
+    transform: scale(.5);
+    border: inset 2px yellow;
+    transition-duration: .5s;
+}
+
+
+/* CONTAINER DOS BOTOES DE ESCOLHA */
+
 #question-container {
     width: 40vw;
     margin: 6vh auto;
     border: solid 5px var(--green);
     border-radius: 10px;
     box-shadow: 1px 1px 2px 2px var(--blue);
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -84,12 +94,11 @@ nav a {
     margin: 20px 10px;
     cursor: pointer;
     border-radius: 7px;
-    /* outline: none; */
+    outline: none;
     font-weight: 600;
     border: none;
     color: var(--yellow);
-    /* box-shadow: 2px 2px 1px 1px; */
-    /* opacity: 0.7; */
+    opacity: 0.7;
 }
 
 .hide {
@@ -103,6 +112,7 @@ button:hover {
     transition-duration: .2s;
     border: solid 2px var(--black);
     color: var(--red);
+    box-shadow: 1px 1px 1px 1px;
 }
 
 
