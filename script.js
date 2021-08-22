@@ -1,23 +1,28 @@
+//CAPTURA todos os elementos que tem a classe em uma lista
 const dog = document.querySelectorAll('.dog');
 const cat = document.querySelectorAll('.cat');
 
+//Captura os botooes
 const catBtn = document.getElementById('btn-cat');
 const dogBtn = document.getElementById('btn-dog');
 
 
-catBtn.addEventListener("click", ()=>{
-    if (dog[1].classList.contains('hide')){
+
+const catDisplay =()=>{
         cat.forEach(element => {
             element.classList.toggle('hide')
         });
-    } 
-})
+    }
 
-dogBtn.addEventListener("click", ()=>{
+
+
+const dogDisplay =()=> {
     dog.forEach(element => {
         element.classList.toggle('hide')
     });
-})
+}
 
-// dog.style.display='none'
-// cat.style.display='none'
+    
+    
+catBtn.addEventListener("click", catDisplay)
+dogBtn.addEventListener("click", dogDisplay)
