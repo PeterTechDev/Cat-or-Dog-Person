@@ -6,6 +6,7 @@
 //CAPTURA todos os elementos que tem a classe e os add em uma lista
 const dog = document.querySelectorAll('.dog');
 const cat = document.querySelectorAll('.cat');
+const welcome = document.querySelector('.welcome')
 
 //Captura os botoes
 const catBtn = document.getElementById('btn-cat');
@@ -22,6 +23,7 @@ const petDisplay = (petShow, petHide) => {
     petShow.forEach(element => {
         element.classList.remove('hide')
     });
+    welcome.style.display = 'none'
     hideDisplay(petHide);
 }
 
