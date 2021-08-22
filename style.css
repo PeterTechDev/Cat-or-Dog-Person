@@ -1,185 +1,178 @@
-/* reseta as configs da page para não atraplhar nosso estilo */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Klee One', cursive, arial;
-    font-size: 1.2rem;
-    /* para não ter barra de rolagem */
-    /* overflow: hidden; */
-}
-
-
-/* Adiciona cores especificas em variáveis */
-
-html {
-    --red: #C11432;
-    --blue: #009ADA;
-    --green: #66A64F;
-    --yellow: #FDD10A;
-    --black: #070707;
-}
-
-body {
-    background-color: #fffafa;
-}
-
-header {
-    background-color: var(--blue);
-    padding: 0 50px;
-    height: 12vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 3vw;
-}
-
-.logo {
-    transition: .2s;
-}
-
-.logo:hover {
-    transform: scale(1.5);
-}
-
-nav a {
-    width: 100px;
-    text-decoration: none;
-    border: var(--green) solid 3px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: var(--green);
-}
-
-nav a:hover {
-    transform: scale(.5);
-    border: inset 2px yellow;
-    transition-duration: .5s;
-}
-
-
-/* CONTAINER DOS BOTOES DE ESCOLHA */
-
-#question-container {
-    width: 40vw;
-    margin: 6vh auto;
-    border: solid 5px var(--green);
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px 2px var(--blue);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-#question-container h2 {
-    padding-top: .5em;
-    color: var(--blue);
-    text-align: center;
-}
-
-#btn-container {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
-#btn-container button {
-    background-color: var(--blue);
-    width: 45%;
-    height: 50px;
-    padding: .6em 1em;
-    margin: 20px 10px;
-    cursor: pointer;
-    border-radius: 7px;
-    outline: none;
-    font-weight: 600;
-    border: none;
-    color: var(--yellow);
-    opacity: 0.7;
-}
-
-.hide {
-    display: none;
-}
-
-button:hover {
-    opacity: 0.9;
-    letter-spacing: 2px;
-    transform: scale(1.1);
-    transition-duration: .2s;
-    border: solid 2px var(--black);
-    color: var(--red);
-    box-shadow: 1px 1px 1px 1px;
-}
-
-
-/* MAIN  */
-
-main {
-    display: flex;
-}
-
-.welcome {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.background img {
-    width: 20vw;
-    float: right;
-}
-
-.container {
-    display: flex;
-    padding: 10px 20px;
-}
-
-.img-container {
-    border: 1px solid gray;
-    border-radius: 4px;
-    padding: 3px;
-    width: 20rem;
-}
-
-.img-container img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.cat img:hover {
-    box-shadow: 0 0 5px 1px var(--yellow);
-}
-
-.dog img:hover {
-    box-shadow: 0 0 5px 1px var(--blue);
-}
-
-span {
-    margin-left: 20px;
-    width: 60%;
-}
-
-
-/* ICONES */
-
-.fa-cat {
-    color: var(--yellow);
-    padding-right: 10px;
-}
-
-.fa-dog {
-    color: var(--yellow);
-    padding-right: 10px;
-}
-
-button:hover .fas {
-    transform: transform(1);
-    color: var(--red);
-    transform: rotate(-360deg);
-    /* transform: scale(1.5); */
-    transition-duration: .5s;
-}
+    /* reseta as configs da page para não atraplhar nosso estilo */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Klee One', cursive, arial;
+        font-size: 1.2rem;
+        /* para não ter barra de rolagem */
+        /* overflow: hidden; */
+    }
+    /* Adiciona cores especificas em variáveis */
+    
+    html {
+        --red: #C11432;
+        --blue: #009ADA;
+        --green: #66A64F;
+        --yellow: #FDD10A;
+        --black: #070707;
+    }
+    
+    body {
+        background-color: #fffafa;
+    }
+    
+    header {
+        background-color: var(--blue);
+        padding: 0 50px;
+        height: 12vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 3vw;
+    }
+    
+    .logo {
+        transition: .2s;
+    }
+    
+    .logo:hover {
+        transform: scale(1.5);
+    }
+    
+    nav a {
+        width: 100px;
+        text-decoration: none;
+        border: var(--green) solid 3px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--green);
+    }
+    
+    nav a:hover {
+        transform: scale(.5);
+        border: inset 2px yellow;
+        transition-duration: .5s;
+    }
+    /* CONTAINER DOS BOTOES DE ESCOLHA */
+    
+    #question-container {
+        width: 40vw;
+        margin: 6vh auto;
+        border: solid 5px var(--green);
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px 2px var(--blue);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #question-container h2 {
+        padding-top: .5em;
+        color: var(--blue);
+        text-align: center;
+    }
+    
+    #btn-container {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    #btn-container button {
+        background-color: var(--blue);
+        width: 45%;
+        height: 50px;
+        padding: .6em 1em;
+        margin: 20px 10px;
+        cursor: pointer;
+        border-radius: 7px;
+        outline: none;
+        font-weight: 600;
+        border: none;
+        color: var(--yellow);
+        opacity: 0.7;
+    }
+    
+    button:hover {
+        opacity: 0.9;
+        letter-spacing: 2px;
+        transform: scale(1.1);
+        transition-duration: .2s;
+        border: solid 2px var(--black);
+        color: var(--red);
+        box-shadow: 1px 1px 1px 1px;
+    }
+    /* CLASSE PARA DEIXAR OS ELEMENTOS DO HMTL ESCONDIDOS */
+    
+    .hide {
+        display: none;
+    }
+    /* MAIN  */
+    
+    main {
+        display: flex;
+    }
+    
+    .welcome {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .background img {
+        width: 20vw;
+        float: right;
+    }
+    
+    .container {
+        display: flex;
+        padding: 10px 20px;
+    }
+    
+    .img-container {
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 3px;
+        width: 20rem;
+    }
+    
+    .img-container img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .cat img:hover {
+        box-shadow: 0 0 5px 1px var(--yellow);
+    }
+    
+    .dog img:hover {
+        box-shadow: 0 0 5px 1px var(--blue);
+    }
+    
+    span {
+        margin-left: 20px;
+        width: 60%;
+    }
+    /* ICONES */
+    
+    .fa-cat {
+        color: var(--yellow);
+        padding-right: 10px;
+    }
+    
+    .fa-dog {
+        color: var(--yellow);
+        padding-right: 10px;
+    }
+    
+    button:hover .fas {
+        transform: transform(1);
+        color: var(--red);
+        transform: rotate(-360deg);
+        /* transform: scale(1.5); */
+        transition-duration: .5s;
+    }
