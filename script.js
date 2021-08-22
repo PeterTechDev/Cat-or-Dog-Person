@@ -1,4 +1,4 @@
-const userName = prompt('Por favor insita seu nome');
+const userName = prompt('Por favor insira seu nome');
 
 greeting = document.getElementById('greeting').innerHTML += ` ${userName}! 💖`;
 
