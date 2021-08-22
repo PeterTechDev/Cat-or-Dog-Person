@@ -15,9 +15,18 @@ html {
     --black: #070707;
 }
 
+header {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    align-items: center;
+    padding: 10px;
+}
+
 #question-container {
     width: 60vh;
-    margin: auto;
+    margin: 8vh auto;
     border: solid 5px var(--green);
     border-radius: 10px;
     box-shadow: 1px 1px 2px 2px var(--blue);
