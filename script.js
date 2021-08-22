@@ -1,6 +1,6 @@
-// const userName = prompt('Por favor insita seu nome');
+const userName = prompt('Por favor insita seu nome');
 
-// greeting = document.getElementById('greeting').innerHTML += ` ${userName}! 💖`;
+greeting = document.getElementById('greeting').innerHTML += ` ${userName}! 💖`;
 
 
 //CAPTURA todos os elementos que tem a classe e os add em uma lista
