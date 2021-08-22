@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Klee One', cursive, arial;
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* para não ter barra de rolagem */
     /* overflow: hidden; */
 }
@@ -27,8 +27,8 @@ body {
 
 header {
     background-color: var(--blue);
+    padding: 0 50px;
     height: 12vh;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,11 +84,11 @@ nav a:hover {
 #btn-container {
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 #btn-container button {
     background-color: var(--blue);
-    /* color: #fafafa; */
     width: 45%;
     height: 50px;
     padding: .6em 1em;
